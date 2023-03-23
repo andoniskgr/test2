@@ -1,28 +1,135 @@
+#define DEBUG 0
+#if DEBUG ==1
+#define debug(x) Serial.print(x)
+#else 
+#define debug(x)
+#endif
 #include <Arduino.h>
-#include <EEPROM.h>
 
 
-const int inputPin=4;
-//bool pulse = false;
-int countPulses=0;
 
 void setup() {
-  Serial.println(EEPROM.length());
- for (int i = 0; i < EEPROM.length(); i++)
- {
-  if (EEPROM.read(i)!=0)
-  {
-    Serial.print("Address "+String(i)+" is:");
-    Serial.println(EEPROM.read(i));
-  }
-    Serial.print("Address scanning end");
+  Serial.begin(9600);
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
+  debug("test");
   
-  
-  
-  
-  delay(10);
- }
- 
   
 }
 
