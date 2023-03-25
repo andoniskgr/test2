@@ -27,13 +27,15 @@ char pass[] = "Tony0105";
 BLYNK_WRITE(V1)
 {
   int pinValue = param.asInt(); // assigning incoming value from pin V1 to a variable
+  // Serial.println(pinValue);
+  // delay(500);
   if (pinValue == 1)
   {
-    digitalWrite(1, LOW);
+    digitalWrite(0, LOW);
   }
   else
   {
-    digitalWrite(1, HIGH);
+    digitalWrite(0, HIGH);
   }
 
   delay(400);
@@ -43,8 +45,10 @@ BLYNK_WRITE(V1)
 
 void setup()
 {
-  pinMode(1, OUTPUT);
+  // Serial.begin(115200);
+  pinMode(0, OUTPUT);
   delay(100);
+  digitalWrite(0,LOW);
   // Debug console
 
   Blynk.begin(BLYNK_AUTH_TOKEN, ssid, pass);
